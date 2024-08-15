@@ -19,10 +19,3 @@ class Node:
 
     def __repr__(self):
         return str(self.data) + " -> " + str(self.next)
-
-
-node1 = Node("abacaxi")
-node2 = Node("morango")
-node1.set_next(node2)
-
-print(node1)
