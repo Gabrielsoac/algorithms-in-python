@@ -35,7 +35,7 @@ class Stack:
         if(self.is_empty):
             raise Exception("Stack Empty")
         
-        old_head = self.get_head
+        old_head = self.get_head()
 
         self.head = self.head.before()
 

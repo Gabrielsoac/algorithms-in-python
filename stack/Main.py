@@ -1,5 +1,4 @@
 from Stack import Stack
-from Item import Item
 
 my_stack = Stack()
 

@@ -49,6 +49,9 @@ class LinkedList:
 
         while not found:
 
+            if current == None:
+                raise ValueError("Not Found")
+
             if current.get_data() == data:
                 found = True
             
@@ -56,14 +59,8 @@ class LinkedList:
                 previous = current
                 current = current.get_next()       
 
-        if current == None:
-            raise ValueError("Not Found")
-
         if previous == None:
             self.head = current.get_next()
         
         else:
             previous.set_next(current.get_next())
-        
-
-        
